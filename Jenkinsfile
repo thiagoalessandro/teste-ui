@@ -1,3 +1,4 @@
+
 node {
 
     stage('Initialize') {
@@ -9,7 +10,8 @@ node {
         checkout scm
     }
 
-    stage('Build'){
+    stage('Test'){
         sh "mvn clean test"
     }
+
 }
